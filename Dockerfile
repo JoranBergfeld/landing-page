@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Build the application
-RUN ./mvnw package
+RUN chmod +x ./mvnw && ./mvnw package
 
 # Expose the port the app runs on
 EXPOSE 80
