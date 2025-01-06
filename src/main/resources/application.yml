@@ -1,0 +1,2 @@
+spring.application.name: info-page
+server.port: 80
