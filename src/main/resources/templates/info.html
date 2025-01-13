@@ -50,8 +50,17 @@
             text-decoration: none;
             margin: 0 10px;
         }
+
         footer a:hover {
             text-decoration: underline;
+        }
+        footer .menu {
+            display: flex;
+            gap: 10px;
+        }
+        footer .copyright {
+            margin-left: auto;
+            color: #666;
         }
     </style>
 </head>
@@ -63,10 +72,13 @@
         <p>I'll provide links to my portfolio, contact page as well as my blog here. Enjoy!</p>
     </div>
     <footer>
-        <a th:href="@{/}">Info</a>
-        <a th:href="@{/blog}">Blog</a>
-        <a th:href="@{/portfolio}">Portfolio</a>
-        <a th:href="@{/reach-out}">Reach out</a>
+        <div class="navigation">
+            <a th:href="@{/}">Info</a>
+            <a th:href="@{/blog}">Blog</a>
+            <a th:href="@{/portfolio}">Portfolio</a>
+            <a th:href="@{/reach-out}">Reach out</a>
+        </div>
+        <a class="copyright">&copy; 2025 Joran's Modern App Solutions. All rights reserved.</a>
     </footer>
 </body>
 </html>
