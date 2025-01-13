@@ -38,6 +38,33 @@
             text-align: center;
             max-width: 600px;
         }
+        .tracks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .track {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .track h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .track p {
+            font-size: 1em;
+            color: #666;
+            text-align: left;
+        }
         footer {
             padding: 20px 0;
             background-color: #333;
@@ -60,6 +87,20 @@
         <h1>Welcome to my portfolio.</h1>
         <p>This part of the website is currently under construction.</p>
         <p>For the work I have done so far, please check out <a href="https://www.linkedin.com/in/joranbergfeld/">my LinkedIn.</a></p>
+        <div class="tracks">
+            <div class="track">
+                <h2>Advise a critical infrastructure company in their efforts to modernize their IT landscape</h2>
+                <p>I've advised a company in the critical infrastructure sector of the Netherlands to improve the overall quality and reliability of their IT landscape through iterative, controlled modernization.</p>
+            </div>
+            <div class="track">
+                <h2>App modernization at a Hospital Information System.</h2>
+                <p>During my time at a hospital information system company, I've advised on how to improve continous integration and deployment, move from a monolithic system to microservices, and implement monitoring across all IT systems.</p>
+            </div>
+            <div class="track">
+                <h2>App modernization at a Payment Provider.</h2>
+                <p>My time at a payment provider was spend implementing the change from a monolithic deployment procedure to that a of a modular deployment procedure.</p>
+            </div>
+        </div>
     </div>
     <footer>
         <a th:href="@{/}">Info</a>
